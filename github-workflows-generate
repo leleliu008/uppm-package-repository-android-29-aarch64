@@ -1,0 +1,103 @@
+#!/bin/sh
+
+set -e
+
+if [ -d ndk-pkg-formula-repository-official-core ] ; then
+    git -C ndk-pkg-formula-repository-official-core pull
+else
+    git clone --depth=1 https://github.com/leleliu008/ndk-pkg-formula-repository-official-core
+fi
+
+cd ndk-pkg-formula-repository-official-core/formula
+
+ls *.yml | sed 's|\.yml$||' | sort | uniq > a
+
+sed -n '/^dep-pkg:/p' *.yml | cut -c10- | tr ' ' '\n' | sort | uniq > b
+
+PKGS="$(diff -U 0 a b | sed '/^--/d' | grep '^-' | sed -e 's|^-||' -e '/^v8$/d' -e '/^skia$/d' -e '/^pdfium$/d' -e '/^webrtc$/d' -e '/^tensorflow-lite$/d' -e '/^librsvg$/d')"
+
+PKGS_COUNT="$(printf "$PKGS" | wc -l)"
+
+cd -
+
+cat > .github/workflows/publish.yml <<EOF
+name: publish
+
+on:
+  workflow_dispatch
+
+jobs:
+EOF
+
+unset ITEMS
+unset NEEDS
+
+I=0
+J=0
+K=0
+
+for item in $PKGS
+do
+    if [ -z "$ITEMS" ] ; then
+        ITEMS="$item"
+    else
+        ITEMS="$ITEMS, $item"
+    fi
+
+    K=$(expr "$K" + 1)
+
+    J=$(expr "$J" + 1)
+
+    if [ "$J" = 256 ] || [ "$K" = "$PKGS_COUNT" ] ; then
+        J=0
+        I=$(expr "$I" + 1)
+
+        cat >> .github/workflows/publish.yml <<EOF
+
+  build$I:
+    strategy:
+      fail-fast: false
+      matrix:
+        pkg: [$ITEMS]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: curl -LO https://raw.githubusercontent.com/leleliu008/ndk-pkg/master/ndk-pkg
+      - run: chmod a+x ndk-pkg
+      - run: ./ndk-pkg setup
+      - run: ./ndk-pkg update
+      - run: ./ndk-pkg install android-29-arm64-v8a/\${{ matrix.pkg }}
+
+      - name: pack
+        run: |
+          set -ex
+          for item in \$(./ndk-pkg ls-installed)
+          do
+              ./ndk-pkg pack "\$item" -o .
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: \${{ matrix.pkg }}
+          path: '*.tar.xz'
+EOF
+
+        unset ITEMS
+
+        if [ -z "$NEEDS" ] ; then
+            NEEDS="build$I"
+        else
+            NEEDS="$NEEDS, build$I"
+        fi
+    fi
+done
+
+cat >> .github/workflows/publish.yml <<EOF
+
+  publish:
+    needs: [$NEEDS]
+
+EOF
+
+cat >> .github/workflows/publish.yml < foot.yml
