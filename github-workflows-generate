@@ -27,6 +27,8 @@ PKGS="$(diff -U 0 a b | sed '/^--/d' | grep '^-' | $SED)"
 
 PKGS_COUNT="$(printf "$PKGS" | wc -l)"
 
+echo "PKGS_COUNT=$PKGS_COUNT"
+
 cd -
 
 cat > .github/workflows/publish.yml <<EOF
