@@ -9,23 +9,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkg: [aalib, acl, ag, age, alass, algernon, antibody, apkeep, aptly, archiver, args, aria2, async++, axel, azcopy, b3sum, base16, base64, bash, basis_universal, bat, bc, bcrypt, bgrep, binaryen, bind, binocle, bison, bk, blockhash, boringssl, boxes, brook, broot, bsdtar, bullet, byacc, bzip2, caddy, cargo-c, catch2, ccache, cereal, cfitsio, cflow, cgal, cheat, check, chezmoi, chinese-calendar, choose, cjson, cli11, clog, cmake, cmark, cmatrix, cmocka, coreutils, cpprestsdk, cpptoml, cppunit, cpuid, cpuinfo, croc, crosstool-ng, crowbook, ctop, cue, curl, curlie, cxxopts, d2, darkhttpd, dasel, dash, dav1d, delta, diffutils, dns2tcp, dnsmap, dog, doggo, dos2unix, dot_static, double-conversion, doxygen, dua, duf, dufs, duktape, dust, easyutils, ed, elvish, epsilon, esbuild, ethereum, exa, exhale, exiv2, eza, faac, faad2, fcp, fd, fdk-aac, fdroidcl, fff, figlet, file, findent, findutils, fish, flac, flatc, flex, flock, fortune, freetype2-with-harfbuzz, fselect, fsmon, fswatch, fzf, fzy, garble, gawk, gbt, gdu, geographiclib, germanium, gettext-tools, gh, gindent, git, git-cliff, git-lfs, gitui, gitwatch, glib-tools, glog, glow, glslang, gm4, gmake, gn, gnu-barcode, gnu-which, gnupg, gnutls, go-md2man, go-tools, godu, gogs, golang, gomobile, google-benchmark, google-highway, goreleaser, gosh, gotop, gotty, gox, gperf, gperftools, gping, gpsim, gputils, graphicsmagick, graphviz, grep, grex, gron, grpc, gsed, gtar, gzip, halibut, helix, helm, hexdump, hexyl, htop, htslib, hugo, hunspell, hurl, hwloc, hydroxide, hyperfine, id3lib, ideviceinstaller, invoice, isl, ixwebsocket, jfrog-cli, jj, jpeg, jq, json-glib, jump, kcp, kcptun, keybase, ko, krb5, lame, lazygit, lcov, ldns, less, lf, libaec, libaio, libao, libargp, libass, libatomic_ops, libb2, libb64, libbcrypt, libbluray, libcaca, libcap, libcap-ng, libcddb, libcdio, libcerf, libcgif, libcroco, libeffcee, libexhale, libexiv2, libgetdomainname, libglm, libgraphene, libilbc, libimagequant, libirecovery, libisoburn, libleveldb, libmaxminddb, libmblen, libmd, libmetalink, libmhash, libmill, libmpc, libmpir, libnl, libnng, libobstack, libopenh264, libphonenumber, libpipeline, libpsl]
+        pkg: [aalib, acl, ag, age, alass, algernon, antibody, apkeep, aptly, archiver, args, aria2, axel, azcopy, b3sum, base16, base64, bash, basis_universal, bat, bc, bcrypt, bgrep, binaryen, bind, binocle, bison, bk, blockhash, boringssl, boxes, brook, broot, bsdtar, bullet, byacc, bzip2, caddy, cargo-c, catch2, ccache, cereal, cfitsio, cflow, cgal, cheat, check, chezmoi, chinese-calendar, choose, cjson, cli11, clog, cmake, cmark, cmatrix, cmocka, coreutils, cotp, cpprestsdk, cpptoml, cppunit, cpuid, cpuinfo, croc, crosstool-ng, crowbook, ctop, cue, curl, curlie, cxxopts, d2, d8, darkhttpd, dasel, dash, dav1d, delta, diffutils, dns2tcp, dnslookup, dnsmap, dnsx, dog, doggo, dos2unix, dot_static, double-conversion, doxygen, dua, duf, dufs, duktape, dust, easyutils, ed, elvish, epsilon, esbuild, ethereum, exa, exhale, exiv2, eza, faac, faad2, fcp, fd, fdk-aac, fdroidcl, fff, figlet, file, findent, findutils, fish, flac, flatc, flex, flock, fortune, fselect, fsmon, fswatch, fzf, fzy, garble, gawk, gbt, gdu, geographiclib, germanium, gettext, gettext-tools, gh, gindent, git, git-cliff, git-lfs, gitui, gitwatch, glib-tools, glog, glow, glslang, gm4, gmake, gn, gnu-barcode, gnu-which, gnupg, gnutls, go-md2man, go-tools, godu, gogs, golang, gomobile, google-benchmark, google-highway, goreleaser, gosh, gotop, gotty, gox, gperf, gperftools, gping, gpsim, gputils, graphicsmagick, graphviz, grep, grex, gron, grpc, grpc-plugins, gsed, gtar, gzip, halibut, helix, helm, hexdump, hexyl, htop, htslib, hugo, hunspell, hurl, hwloc, hydroxide, hyperfine, id3lib, ideviceinstaller, invoice, isl, ixwebsocket, jfrog-cli, jj, jpeg, jq, json-glib, jump, kcp, kcptun, keybase, ko, krb5, lame, lazygit, lcov, ldns, less, lf, libaec, libaio, libao, libargp, libasprintf, libass, libasync++, libatomic_ops, libb2, libb64, libbcrypt, libbluray, libcaca, libcap, libcap-ng, libcddb, libcdio, libcerf, libcgif, libcroco, libduktape, libexhale, libexiv2, libgetdomainname, libglm, libgraphene, libilbc, libimagequant, libint, libintl, libintl-lite, libirecovery, libisoburn, libleveldb, libmaxminddb, libmblen, libmd, libmesalink, libmetalink, libmhash]
 
     runs-on: ubuntu-latest
 
+    container: fpliu/ndk-pkg
+
     steps:
-      - run: curl -LO https://raw.githubusercontent.com/leleliu008/ndk-pkg/master/ndk-pkg
-      - run: chmod a+x ndk-pkg
-      - run: ./ndk-pkg setup
-      - run: ./ndk-pkg update
-      - run: ./ndk-pkg install android-29-arm64-v8a/${{ matrix.pkg }}
+      - run: /usr/bin/ndk-pkg env
+      - run: /usr/bin/ndk-pkg setup
+      - run: /usr/bin/ndk-pkg update
+      - run: /usr/bin/ndk-pkg install android-29-arm64-v8a/${{ matrix.pkg }}
 
       - name: pack
         run: |
           set -ex
-          for item in $(./ndk-pkg ls-installed)
+          for item in $(/usr/bin/ndk-pkg ls-installed)
           do
-              ./ndk-pkg pack "$item" -o .
+              /usr/bin/ndk-pkg pack "$item" -o .
           done
 
       - uses: actions/upload-artifact@v4
@@ -37,23 +38,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkg: [libpugixml, libqalculate, libqrencode, libraqm, librasterlite, libraw, libre2c, libressl, libsamplerate, libsigsegv, libsmi, libsndfile, libspectre, libspng, libsrtp, libthai, libtinyxml2, libtorrent-rasterbar, libtwolame, libunwind, libupnp, libusrsctp, libvips, libwavpack, libwebm, libxcrypt, libxml2-utils, libxslt, libyuv, libzlog, libzmq, lief, lighttpd, livego, llhttp, lmdb, lnd, lodepng, log4cplus, lolcat, lrzip, lsd, lsof, luajit, luau, lychee, lynx, lz4, lzip, lzop, magic_enum, mcfly, md4c, mdbook, mediainfo, mesalink, mimalloc, minisign, miniz, mm-wiki, mold, mosh, mozjpeg, mpdecimal, mpg123, mruby@3.0.0, mruby@3.2.0, msgpack-c, nano, nanomsg, nap, nasm, navi, ncdu, neofetch, netcat, netpbm, nghttp2, nginx, ngtcp2, ninja, nnn, nsh, ntbtls, numactl, nushell, oat++, obfs4proxy, oboe, openal-soft, opencolorio, opencv, openlibm, openmpi, openssl-fips, p7zip, packcc, patch, patchelf, pbzip2, pcapplusplus, pcre2, pget, physfs, pigz, pjsip, pkg-config, pkgconf, plog, plzip, png, pngquant, poco, ppkg, procs, progress, proj, proot2, protobuf, psimd, pup, putty, pybind11, q, qpdf, qrencode, quiche, quickjs, ragel, rang, rapidjson, rav1e, rclone, re2c, restic, resvg, ripgrep, ripgrep-all, rlwrap, rsass, rsync, rtmpdump, rtorrent, ruff, rust-analyzer, sassc, scc, sd, shaderc, shc, shell2http, shellharden, shiori, silicon, simdjson, sjpeg, skcms, sl, soundtouch, spdlog, speex, sqlite3, starship, stwolame, stylua, supervisord, suricata, svn-lite, swig, syncthing, sysinfo, szip, taglib, tarlz, tbox, tcc, tcl, tcpdump, tdu, tealdeer, tectonic, tengo, test, tiff, tig, tlrc, tmux, tokei, toml++, toml11, tree, ttyd, ttygif, ttyrec, tweego, typos, uctags, unbound, unrar, uppm, usbmuxd, utf8.h, utfcpp, uthash, util-linux, valijson, vegeta, vim, virustotal-cli, wabt, wasm3, wasmtime, watchexec, wavpack, webhook, webp, wget, wolfssl, wuzz, x264, x265, xh, xmake, xmlwf, xorriso, xpup, xsltproc, xxd, xz, yaml-cpp, yasm, youtubedr, yq, yyjson, zlib-ng, zola, zopfli, zoxide, zsh, zstd]
+        pkg: [libmill, libminiz, libmpc, libmpir, libnl, libnng, libobstack, libopenh264, libphonenumber, libpipeline, libpng++, libpsl, libpugixml, libqalculate, libqrencode, libquiche, libraqm, librasterlite, libraw, libre2c, libressl, libsamplerate, libsigsegv, libsmi, libsndfile, libspectre, libspng, libsrtp, libtextstyle, libthai, libtinyxml2, libtorrent-rasterbar, libtwolame, libunwind, libupnp, libusrsctp, libvips, libwavpack, libwebm, libxcrypt, libxslt, libyuv, libzim, libzlog, libzmq, lief, lighttpd, livego, llhttp, lmdb, lnd, lodepng, log4cplus, lolcat, lrzip, lsd, lsof, luajit, luau, lychee, lynx, lz4, lzip, lzop, magic_enum, mcfly, md4c, mdbook, mediainfo, mimalloc, minisign, mm-wiki, mold, mosh, mozjpeg, mpdecimal, mpg123, mruby@3.0.0, mruby@3.2.0, msgpack-c, nano, nanomsg, nap, nasm, navi, ncdu, neofetch, netcat, netpbm, nghttp2, nginx, ngtcp2, ninja, nnn, nsh, ntbtls, numactl, nushell, oat++, obfs4proxy, oboe, openal-soft, opencolorio, opencv, openlibm, openmpi, openssl, openssl-fips, p7zip, packcc, patch, patchelf, pbzip2, pcapplusplus, pcre2, pget, physfs, pigz, pjsip, pkg-config, pkgconf, plog, plzip, png, pngcheck, pngquant, pngsplit, poco, ppkg, procs, progress, proj, proot2, protobuf, psimd, pup, putty, pybind11, q, qpdf, qrencode, quickjs, ragel, rang, rapidjson, rav1e, rclone, re2c, restic, resvg, ripgrep, ripgrep-all, rlwrap, rsass, rsync, rtmpdump, rtorrent, ruff, rust-analyzer, sassc, scc, sd, shaderc, shc, shell2http, shellharden, shiori, silicon, simdjson, sjpeg, skcms, sl, soundtouch, spdlog, speex, sqlite3, starship, stwolame, stylua, supervisord, suricata, svn-lite, swig, syncthing, sysinfo, szip, taglib, tarlz, tbox, tcl, tcpdump, tdu, tealdeer, tectonic, tengo, test, tiff, tig, tlrc, tmux, tokei, toml++, toml11, tree, ttyd, ttygif, ttyrec, tweego, typos, uctags, unbound, unrar, uppm, usbmuxd, utf8.h, utfcpp, uthash, util-linux, valijson, vegeta, vim, virustotal-cli, wabt, wasm3, wasmtime, watchexec, wavpack, webhook, webp, wget, whois, wolfssl, wuzz, x264, x265, xh, xmake, xmlutils, xmlwf, xorriso, xpup, xsltproc, xxd, xz, yaml-cpp, yasm, youtubedr, yq, yyjson, zlib, zlib-ng, zola, zopfli, zoxide, zsh, zstd]
 
     runs-on: ubuntu-latest
 
+    container: fpliu/ndk-pkg
+
     steps:
-      - run: curl -LO https://raw.githubusercontent.com/leleliu008/ndk-pkg/master/ndk-pkg
-      - run: chmod a+x ndk-pkg
-      - run: ./ndk-pkg setup
-      - run: ./ndk-pkg update
-      - run: ./ndk-pkg install android-29-arm64-v8a/${{ matrix.pkg }}
+      - run: /usr/bin/ndk-pkg env
+      - run: /usr/bin/ndk-pkg setup
+      - run: /usr/bin/ndk-pkg update
+      - run: /usr/bin/ndk-pkg install android-29-arm64-v8a/${{ matrix.pkg }}
 
       - name: pack
         run: |
           set -ex
-          for item in $(./ndk-pkg ls-installed)
+          for item in $(/usr/bin/ndk-pkg ls-installed)
           do
-              ./ndk-pkg pack "$item" -o .
+              /usr/bin/ndk-pkg pack "$item" -o .
           done
 
       - uses: actions/upload-artifact@v4
