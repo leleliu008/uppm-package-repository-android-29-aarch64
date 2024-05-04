@@ -14,7 +14,16 @@ ls *.yml | sed 's|\.yml$||' | sort | uniq > a
 
 sed -n '/^dep-pkg:/p' *.yml | cut -c10- | tr ' ' '\n' | sort | uniq > b
 
-PKGS="$(diff -U 0 a b | sed '/^--/d' | grep '^-' | sed -e 's|^-||' -e '/^v8$/d' -e '/^skia$/d' -e '/^pdfium$/d' -e '/^webrtc$/d' -e '/^tensorflow-lite$/d' -e '/^librsvg$/d')"
+SED="sed -e s|^-||"
+
+for item in d8 v8 skia pdfium webrtc tensorflow-lite librsvg libint dash
+do
+    SED="$SED -e /^$item$/d"
+done
+
+echo "SED=$SED"
+
+PKGS="$(diff -U 0 a b | sed '/^--/d' | grep '^-' | $SED)"
 
 PKGS_COUNT="$(printf "$PKGS" | wc -l)"
 
