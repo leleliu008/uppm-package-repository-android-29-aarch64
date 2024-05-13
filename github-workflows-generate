@@ -83,7 +83,17 @@ do
       - run: /usr/bin/ndk-pkg env
       - run: /usr/bin/ndk-pkg setup
       - run: /usr/bin/ndk-pkg update
-      - run: /usr/bin/ndk-pkg install android-29-arm64-v8a/\${{ matrix.pkg }}
+
+      - name: build
+        run: |
+          case \${{ matrix.pkg }} in
+            cmake)
+              /usr/bin/ndk-pkg install android-29-arm64-v8a/\${{ matrix.pkg }} --fsle
+              ;;
+            *)
+              /usr/bin/ndk-pkg install android-29-arm64-v8a/\${{ matrix.pkg }}
+              ;;
+          esac
 
       - name: pack
         run: |
