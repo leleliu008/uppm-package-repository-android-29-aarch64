@@ -1,0 +1,5 @@
+summary: A lightweight multi-protocol & multi-source, cross platform download utility
+webpage: https://aria2.github.io
+version: 1.37.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/aria2-1.37.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 220d8e94550ad577a45a2ba38d089e75c707cac382a01515643be660f4c982bb

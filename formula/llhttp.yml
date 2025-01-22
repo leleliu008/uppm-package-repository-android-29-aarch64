@@ -1,0 +1,5 @@
+summary: http_parser replacement
+webpage: https://llhttp.org/
+version: 6.0.6
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/llhttp-6.0.6-android-29-arm64-v8a.release.tar.xz
+bin-sha: a2df91d5e11f951bafbd8fc55a17a024542da3e6cccce8a1721c5dc153386b6a

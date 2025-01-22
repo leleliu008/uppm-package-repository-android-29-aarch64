@@ -1,0 +1,5 @@
+summary: An opinionated Lua code formatter
+webpage: https://github.com/JohnnyMorganz/StyLua
+version: 0.20.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/stylua-0.20.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 84f62137977f147b89dde7e75a297bd377cefc3be3890062e4233134c0475b76

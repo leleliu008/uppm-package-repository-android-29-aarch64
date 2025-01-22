@@ -1,0 +1,5 @@
+summary: Fish-like, POSIX-compatible shell
+webpage: https://github.com/nuta/nsh
+version: 0.4.2
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/nsh-0.4.2-android-29-arm64-v8a.release.tar.xz
+bin-sha: 722d6930e77c045be6e205396cdb767788413eb345f12bd51b029d41d26219e3

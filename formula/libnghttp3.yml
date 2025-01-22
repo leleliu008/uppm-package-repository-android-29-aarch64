@@ -1,0 +1,5 @@
+summary: HTTP/3 library written in C
+webpage: https://github.com/ngtcp2/nghttp3
+version: 1.5.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libnghttp3-1.5.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: e583f339d89e526e39335be7370855a5811e0fb00ce5a015a32808e04c8462bf

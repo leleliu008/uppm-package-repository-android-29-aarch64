@@ -1,0 +1,5 @@
+summary: A header-only library for division via fixed-point multiplication by inverse
+webpage: https://github.com/Maratyszcza/FXdiv
+version: 2025.01.22
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/fxdiv-2025.01.22-android-aarch64.release.tar.xz
+bin-sha: 7a8db158f37ac6a19d4e8078c52c5a1bf57844bac076c161f7634e1a42ca0278

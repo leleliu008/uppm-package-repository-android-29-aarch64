@@ -1,0 +1,5 @@
+summary: A small and embeddable JavaScript engine
+webpage: https://bellard.org/quickjs
+version: 2024.01.13
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/quickjs-2024.01.13-android-29-arm64-v8a.release.tar.xz
+bin-sha: fbcca58bb76b5decc1f57ccd97f9c39d09ef9b7ac6fba14ab374d0c681f4c3be

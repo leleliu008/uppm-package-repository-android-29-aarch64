@@ -1,0 +1,5 @@
+summary: C++ search engine library
+webpage: https://xapian.org/
+version: 1.4.26
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libxapian-1.4.26-android-29-arm64-v8a.release.tar.xz
+bin-sha: 3fed22cd81b898dc14652e0a78783d68bea7c85e1dbbceaf1c68c86178efcf55

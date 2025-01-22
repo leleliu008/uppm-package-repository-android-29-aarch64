@@ -1,0 +1,5 @@
+summary: The ultimate library for managing PDF documents
+webpage: https://mupdf.com/
+version: 1.24.9
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libmupdf-1.24.9-android-29-arm64-v8a.release.tar.xz
+bin-sha: 4d06d63457bd5f2319dc4c0f25b188afd65a5f69c5a71c6909514e4a323ae67c

@@ -1,0 +1,5 @@
+summary: A git extension for versioning large files
+webpage: https://github.com/git-lfs/git-lfs
+version: 3.5.1
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/git-lfs-3.5.1-android-29-arm64-v8a.release.tar.xz
+bin-sha: 5ed2b026a2be039c9e65fe4b4e730368b0559efa7e2710ecd6dfd48fbf3d7c93

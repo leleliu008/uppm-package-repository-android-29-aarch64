@@ -1,0 +1,5 @@
+summary: Yacc-compatible Parser generator
+webpage: https://www.gnu.org/software/bison
+version: 3.8.2
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/bison-3.8.2-android-29-arm64-v8a.release.tar.xz
+bin-sha: d3848407bd388034f40fb1cce25b7f79d090ccfce878f4d490a4cd91f11a7d0a

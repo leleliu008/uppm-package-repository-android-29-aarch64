@@ -1,0 +1,5 @@
+summary: GNU implementation of which utility
+webpage: https://carlowood.github.io/which/index.html
+version: 2.21
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/gnu-which-2.21-android-29-arm64-v8a.release.tar.xz
+bin-sha: 543dffb72f0055f67a591afd792b271b04503247dbf107c42533244719fcb11c

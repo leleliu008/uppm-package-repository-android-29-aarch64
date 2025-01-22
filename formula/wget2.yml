@@ -1,0 +1,5 @@
+summary: Successor of GNU Wget, a file and recursive website downloader
+webpage: https://gitlab.com/gnuwget/wget2
+version: 2.2.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/wget2-2.2.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 4228ff5e38af1f7812fe60c253b7a6d6c8ac0f2e38f51fb567efacf0af5752f8

@@ -1,0 +1,5 @@
+summary: A cross-platform build utility based on Lua
+webpage: https://xmake.io/
+version: 2.9.2
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/xmake-2.9.2-android-29-arm64-v8a.release.tar.xz
+bin-sha: a4ce768fed5b3830e4c3ffad4063d6cc311e5b35b52807a7365531f6d859b80c

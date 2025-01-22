@@ -1,0 +1,5 @@
+summary: Interpreter for the AWK Programming Language
+webpage: https://invisible-island.net/mawk/
+version: 1.3.4
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/mawk-1.3.4-android-29-arm64-v8a.release.tar.xz
+bin-sha: 81dc37010699d4344f48664fecb3f43ee23631c3bbfb652c10af2bebb6bd2f21

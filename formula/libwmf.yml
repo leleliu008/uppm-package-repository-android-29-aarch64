@@ -1,0 +1,5 @@
+summary: Library for converting WMF (Window Metafile Format) files
+webpage: https://wvware.sourceforge.net/libwmf.html
+version: 0.2.8.4
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libwmf-0.2.8.4-android-29-arm64-v8a.release.tar.xz
+bin-sha: 6bf508c41734bc226fec16729969393cf0178bee70b47dd809f280d22a674bb3

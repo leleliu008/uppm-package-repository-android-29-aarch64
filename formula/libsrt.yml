@@ -1,0 +1,5 @@
+summary: Secure Reliable Transport
+webpage: https://www.srtalliance.org/
+version: 1.5.3
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libsrt-1.5.3-android-29-arm64-v8a.release.tar.xz
+bin-sha: e383ce11df99d2130bddfd4347737364aa216cc9c09eaa4e3ace25702eb62a7b

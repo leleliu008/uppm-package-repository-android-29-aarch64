@@ -1,0 +1,5 @@
+summary: Fly through your shell history
+webpage: https://github.com/cantino/mcfly
+version: 0.9.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/mcfly-0.9.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 416899f558f4a767da6a2a6ef8b73bcacc22b7e8e2d90ee417859537b9513f14

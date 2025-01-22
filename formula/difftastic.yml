@@ -1,0 +1,5 @@
+summary: A structural diff tool that compares files based on their syntax
+webpage: https://github.com/Wilfred/difftastic
+version: 0.61.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/difftastic-0.61.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 56625e57e9ab4ef604a8aa84dc0c40ffd2fa20e6d054be3519593af388141ecc

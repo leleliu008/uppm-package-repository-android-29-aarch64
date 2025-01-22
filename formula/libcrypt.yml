@@ -1,0 +1,5 @@
+summary: crypt(3) implementation
+webpage: http://michael.dipperstein.com/crypt
+version: 1
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libcrypt-1-android-29-arm64-v8a.release.tar.xz
+bin-sha: ca0d41ee7b7f3fc5aa2b7a9e8d25abbb05a901b86da577669fa14cbd3ec3d8ae

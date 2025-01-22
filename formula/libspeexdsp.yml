@@ -1,0 +1,5 @@
+summary: Speex audio processing library
+webpage: https://github.com/xiph/speexdsp
+version: 1.2.1
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libspeexdsp-1.2.1-android-29-arm64-v8a.release.tar.xz
+bin-sha: 0b92c96957cfad498130674c7b274854d301c780d96b406afface5c476e18001

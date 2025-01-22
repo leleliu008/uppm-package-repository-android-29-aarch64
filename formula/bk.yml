@@ -1,0 +1,5 @@
+summary: Terminal Epub reader
+webpage: https://github.com/aeosynth/bk
+version: 0.6.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/bk-0.6.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 70d311a6089c3c2a88ee361e6c36f5b78ff239998e93a69b08fba8b59623e8c9

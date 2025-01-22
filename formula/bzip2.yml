@@ -1,0 +1,5 @@
+summary: Burrows–Wheeler-based data compression utilities with high compression ratio
+webpage: https://sourceware.org/bzip2
+version: 1.0.8
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/bzip2-1.0.8-android-29-arm64-v8a.release.tar.xz
+bin-sha: 20466f0f7945e7c4fe61917340e5dd313daf069f970cc3fb4202ddfd4c5397b7

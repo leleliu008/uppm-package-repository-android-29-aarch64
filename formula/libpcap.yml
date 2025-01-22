@@ -1,0 +1,5 @@
+summary: Packet(TCP/IP) Capture library
+webpage: https://www.tcpdump.org
+version: 1.10.4
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libpcap-1.10.4-android-29-arm64-v8a.release.tar.xz
+bin-sha: 57bed75903fd58205548cbbddf072539c790a8035415d871b6a56c1cded791c9

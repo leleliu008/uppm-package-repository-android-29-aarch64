@@ -1,0 +1,5 @@
+summary: C library for creating IP packets
+webpage: https://github.com/libnet/libnet
+version: 1.3
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libnet-1.3-android-29-arm64-v8a.release.tar.xz
+bin-sha: 4aec189c729cd2f83d58d3d968c55e916ff95c9f11cd0d712e730a4941cfb15a

@@ -1,0 +1,5 @@
+summary: A C++ library for cloud-based client-server communication
+webpage: https://github.com/microsoft/cpprestsdk
+version: 2.10.19
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/cpprestsdk-2.10.19-android-29-arm64-v8a.release.tar.xz
+bin-sha: c4505ebb1f79009f95a2d9fe7d4b6b45a6b8f3b1d67e6b34a8e051e3cbd785e6

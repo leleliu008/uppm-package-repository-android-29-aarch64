@@ -1,0 +1,5 @@
+summary: A complete, cross-platform solution to record, convert and stream audio and video
+webpage: https://ffmpeg.org/
+version: 7.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/ffmpeg-dev-7.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 93b8cc58544568119c9b738d0e04cb3941e582445b337089978b3488d5c48bc3

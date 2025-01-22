@@ -1,0 +1,5 @@
+summary: memory-safe and OpenSSL-compatible TLS library
+webpage: https://mesalink.io
+version: 2025.01.22
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libmesalink-2025.01.22-android-29-arm64-v8a.release.tar.xz
+bin-sha: ebb35b8e502109ec6d6b7fa0fef9ab34c57cd1dfcce4419b4a5fc2aa6d2383ab

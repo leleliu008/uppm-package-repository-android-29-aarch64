@@ -1,0 +1,5 @@
+summary: C macros for hash tables and more
+webpage: https://troydhanson.github.io/uthash/
+version: 2.3.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/uthash-2.3.0-android-aarch64.release.tar.xz
+bin-sha: 793570bd21a2a729532ea8ba0b19a888e48cc540bdc9c9e223515ffc48e22f32

@@ -1,0 +1,5 @@
+summary: Multi-format archive and compression library
+webpage: https://www.libarchive.org/
+version: 3.7.4
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libarchive-3.7.4-android-29-arm64-v8a.release.tar.xz
+bin-sha: b0484471c000f6524a8a34b3083292db65a1f5445fb81d62b5ac0c085d60b739

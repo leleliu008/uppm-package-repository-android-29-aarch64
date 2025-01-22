@@ -1,0 +1,5 @@
+summary: C access to FITS data files with optional Fortran wrappers
+webpage: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+version: 4.4.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libcfitsio-4.4.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 2d4312d58ed62225f50146b9e0494f2108323dd0ee48202eee73b30192c4e4fd

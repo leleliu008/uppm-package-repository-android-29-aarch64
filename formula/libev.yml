@@ -1,0 +1,5 @@
+summary: Asynchronous event library
+webpage: http://software.schmorp.de/pkg/libev.html
+version: 4.33
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libev-4.33-android-29-arm64-v8a.release.tar.xz
+bin-sha: 9709425f1dba83411c827c8ea897d5519dcc6195be114045c84ec9dbd592bae8

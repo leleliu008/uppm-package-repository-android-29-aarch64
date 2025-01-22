@@ -1,0 +1,5 @@
+summary: A terminal based markdown reader
+webpage: https://github.com/charmbracelet/glow
+version: 1.5.1
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/glow-1.5.1-android-29-arm64-v8a.release.tar.xz
+bin-sha: 36dba41d374e910b8de5dfdba31131531173e2c048e1d109d8b51f886ff9b93c

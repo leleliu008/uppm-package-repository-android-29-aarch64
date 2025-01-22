@@ -1,0 +1,5 @@
+summary: Portable SCTP userland stack
+webpage: https://github.com/sctplab/usrsctp
+version: 0.9.5.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libusrsctp-0.9.5.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: e1781807628d43127b68cd0d2e4352f5ee0ec7923ff725b10232bdb0fd6872bc

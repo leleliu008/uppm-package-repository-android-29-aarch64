@@ -1,0 +1,5 @@
+summary: An extremely fast Python linter, written in Rust
+webpage: https://beta.ruff.rs/
+version: 0.9.0
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/ruff-0.9.0-android-29-arm64-v8a.release.tar.xz
+bin-sha: 196fa959ffa1f6322299601b1f3fb9a618036c4a0570e47caa21a94b6f7e7259

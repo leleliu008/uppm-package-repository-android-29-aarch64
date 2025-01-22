@@ -1,0 +1,5 @@
+summary: Smart font renderer for non-Roman scripts
+webpage: https://graphite.sil.org
+version: 1.3.14
+bin-url: https://github.com/leleliu008/uppm-package-repository-android-29-aarch64/releases/download/2025.01.22/libgraphite2-1.3.14-android-29-arm64-v8a.release.tar.xz
+bin-sha: 511b99c465dbeef4615223483d186fba64681948adcd7812b9c7bf2c5ed01ba3
